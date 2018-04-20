@@ -72,7 +72,7 @@ BOOST_LIB                   = $(BOOST_TOP)/$(PKG_ARCH)/lib
 BOOST_INCLUDE               = $(BOOST_TOP)/$(PKG_ARCH)/include
 
 YAMLREADER_PACKAGE_NAME     = cpsw/yamlReader
-YAMLREADER_VERSION          = yamlReader.git
+YAMLREADER_VERSION          = R1.0.0
 YAMLREADER_TOP              = $(PACKAGE_SITE_TOP)/$(YAMLREADER_PACKAGE_NAME)/$(YAMLREADER_VERSION)
 YAMLREADER_LIB              = $(YAMLREADER_TOP)/$(PKG_ARCH)/lib
 YAMLREADER_INCLUDE          = $(YAMLREADER_TOP)/$(PKG_ARCH)/include
