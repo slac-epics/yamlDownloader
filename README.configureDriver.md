@@ -1,4 +1,4 @@
-# How to configure the driver
+# How to configure the yamlDownloader driver
 
 ## Overview
 
@@ -11,7 +11,7 @@ This document describes how to configure the driver and load it into your IOC.
 
 In order to use **yamlDownloader** in your application you must call **DownloadYamlFile** on your IOC's st.cmd script.
 
-With the following parameters
+With the following parameters:
 
 DownloadYamlFile(FPGA_IP, DEST_PATH)
 
@@ -22,7 +22,7 @@ DownloadYamlFile(FPGA_IP, DEST_PATH)
 
 
 **Notes:**
-- *DEST_PATH* must be writable, for example a location under $IOC_DATA.
+- *DEST_PATH* must be writable, for example a location under $IOC_DATA. Otherwise it will throw and exception.
 
 ## Use of the yamlLoader Module
 

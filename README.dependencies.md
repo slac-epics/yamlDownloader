@@ -5,7 +5,7 @@
 This module downloads the YAML tarball storaged in the FPGA's PROM. The tarball is written and untared
 to an specific destination folder. Then, it can be loaded, for example, using the yamlLoader module.
 
-This document describes what external packages and modules are reuired and how to configure them into
+This document describes what external packages and modules are required and how to configure them into
 your IOC.
 
 ## Dependencies
