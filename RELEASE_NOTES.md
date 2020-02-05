@@ -3,6 +3,12 @@
 Release notes for the yamlDownloader EPICS Module.
 
 ## Releases:
+* __R1.2.0__: 2020-02-05 J. Vasquez
+  * Update buildroot to version 2019.08
+  * Update to cpsw/framewrok to R4.4.1
+  * Update deviceLibrary to R1.2.0
+  * Update yamlReader to R1.2.0
+
 * __R1.1.3__: 2019-11.18 Kukhee Kim
   * build against asyn R4.32-1.0.0
 
