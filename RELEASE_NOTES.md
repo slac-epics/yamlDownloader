@@ -3,6 +3,9 @@
 Release notes for the yamlDownloader EPICS Module.
 
 ## Releases:
+* __R1.2.1__: 2021-10-11  M. Dunning
+  * Update asyn to R4.39-0.0.1
+
 * __R1.2.0__: 2020-02-05 J. Vasquez
   * Update buildroot to version 2019.08
   * Update to cpsw/framewrok to R4.4.1
