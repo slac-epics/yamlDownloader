@@ -3,6 +3,9 @@
 Release notes for the yamlDownloader EPICS Module.
 
 ## Releases:
+* __R1.2.4__: 2024-07-24  J. Lorelli
+  * Updated asyn to R4.39-1.0.2
+
 * __R1.2.3__: 2023-08-02  M. Donadio
   * Added support to build in RHEL7.
 
