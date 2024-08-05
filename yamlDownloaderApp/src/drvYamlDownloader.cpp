@@ -5,19 +5,25 @@
 
 extern "C" int DownloadYamlFile( const char *ipAddr, const char* destFolder )
 {
-    // Create YamlReader object
-    YamlReader tr = IYamlReader::create( ipAddr );
+	try {
+        // Create YamlReader object
+        YamlReader tr = IYamlReader::create( ipAddr );
 
-    // Set output directory
-    tr->setOutputDir( destFolder );
+        // Set output directory
+        tr->setOutputDir( destFolder );
 
-    // Read the YAML tarball from the FPGA's PROM
-    tr->readTarball();
+        // Read the YAML tarball from the FPGA's PROM
+        tr->readTarball();
 
-    // Untar the file, stripping the root directory
-    tr->untar( true );
+        // Untar the file, stripping the root directory
+	    tr->untar( true );
 
-    return 0;
+        return 0;
+	}
+	catch(const std::exception& e) {
+		printf("Error while downloading YAML file: %s\n", e.what());
+		return -1;
+	}
 }
 
 
@@ -33,7 +39,7 @@ static const iocshFuncDef configFuncDef = { "DownloadYamlFile", 2, confArgs };
 
 static void configCallFunc( const iocshArgBuf *args )
 {
-    DownloadYamlFile( args[0].sval, args[1].sval );
+    iocshSetError(DownloadYamlFile( args[0].sval, args[1].sval ));
 }
 
 void drvYamlDownloaderRegister()
