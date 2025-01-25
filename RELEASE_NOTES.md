@@ -3,6 +3,11 @@
 Release notes for the yamlDownloader EPICS Module.
 
 ## Releases:
+* __R1.2.5__: 2025-01-24  J. Lorelli
+  * Updated CPSW to R4.5.2
+  * Updated deviceLibrary to 1.2.2
+  * Updated yamlReader to 1.2.2
+
 * __R1.2.4__: 2024-07-24  J. Lorelli
   * Updated asyn to R4.39-1.0.2
   * Updated deviceLibrary to R1.2.1
